@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tic Tac Toe</title>
+    <style>
+      body {
+        background-color: powderblue;
+      }
+      .row {
+      }
+      .column {
+        display: inline-block;
+        height: 50px;
+        width: 50px;
+        border: 1px solid black;
+      }
+      .column.first {
+      }
+      .column :not(.first) {
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Tic Tac Toe</h1>
+    <p>It is <span id="player">X</span>'s turn.</p>
+    <p id="message"></p>
+    <div id="board">
+      <div class="row first">
+        <div id="1" class="column first"></div>
+        <div id="2" class="column"></div>
+        <div id="3" class="column last"></div>
+      </div>
+      <div class="row">
+        <div id="4" class="column first"></div>
+        <div id="5" class="column"></div>
+        <div id="6" class="column last"></div>
+      </div>
+      <div class="row last">
+        <div id="7" class="column first"></div>
+        <div id="8" class="column"></div>
+        <div id="9" class="column last"></div>
+      </div>
+    </div>
+    <div><button onClick="resetBoard()">Reset Game</button></div>
+    <script src="./app.js"></script>
+  </body>
+</html>
